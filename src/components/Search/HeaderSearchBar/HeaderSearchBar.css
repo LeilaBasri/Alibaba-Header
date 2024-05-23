@@ -1,0 +1,274 @@
+.headerSearchBarContainer{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.headerSearchBarContent{
+    height: 200px;
+    max-width: 950px;
+    min-width: 844px;
+    width: 100%;
+    margin: auto;
+    margin-top: 32px;
+}
+.headerSearchBarTabContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.tabSearchBtn{
+    font-size: 28px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    position: relative;
+    display: inline-block;
+    margin-right: 48px;
+    cursor: pointer;
+}
+.active{
+    font-weight: 600;
+    height: 36px;
+    line-height: 36px;
+}
+.active::after{
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f60;
+    border-radius: 2px;
+}
+
+/* *************************************************************** */
+
+.searchBarContainer{
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+.inputSearchBarContainer{
+    height: 56px;
+    border-radius: 40px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inputSearchBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 28px;
+    display: block;
+}
+.inputSearchBar input{ 
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    line-height: 36px;
+    align-items: center;
+    color: #222;
+    background-color: transparent;
+    border: none;
+    
+}
+.searchBarPlaceHolder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    line-height: 36px;
+    cursor: text;
+    color: #767676;
+    transition: all ease;
+
+}
+.placeHolderItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.placeHolderItem{
+    opacity: 0;
+}
+.placeHolderItem:first-child{
+    opacity: 1;
+}
+.placeHolderItem1{
+    animation-name: showPlaceHolderItem1;
+    animation-duration: 18s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.placeHolderItem2{
+    animation-name: showPlaceHolderItem2;
+    animation-duration: 12s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+}
+.placeHolderItem3{
+    animation-name: showPlaceHolderItem3;
+    animation-duration: 12s;
+    animation-delay: 14s;
+    animation-iteration-count: infinite;
+}
+.searchBarIconDefault{
+    display: flex;
+    justify-self: center;
+    vertical-align: middle;
+    width: 25px;
+    height: 55px;
+    color: #222;
+    cursor: pointer;
+    margin: 0 12px 0 0;
+    flex-shrink: 0;
+}
+.searchBarIconHover{
+    display: flex;
+    justify-self: center;
+    vertical-align: middle;
+    width: 25px;
+    height: 55px;
+    color: #222;
+    cursor: pointer;
+    margin: 0 12px 0 0;
+    flex-shrink: 0;
+    display: none !important;
+}
+.searchBarIconDefault:hover {
+    display: none !important;
+    cursor: pointer;
+}
+.searchBarIconHover .searchBarIcon:hover{
+    display: flex !important;
+    cursor: pointer;
+} 
+.searchBarbuttonContainer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.searchBarbutton{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    -moz-box-align: center;
+    -webkit-box-align: center ;
+    background-color: #f60;
+    color: #fff;
+    border: 1px solid transparent;
+    font-size: 18px;
+    height: 48px;
+    width: 125px;
+    line-height: 48px;
+    border-radius: 26px;
+    margin-right: 4px;
+}
+.searchBarbutton img{
+    margin-right: 8px;
+}
+.searchBarPopup{
+    
+}
+#searchBarPopup{
+    display: none;
+}
+
+/* *************************************************** */
+
+.frequentlySearchedContainer{
+    width: 100%;
+    height: 36px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    
+}
+.frequentlySearchedContainer div{
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    height: 36px;
+    min-width: max-content;
+    line-height: 36px;
+    margin: 0 10px;
+    padding: 0 24px;
+    display: flex;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.frequentlySearchedContainer div:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+.frequentlySearchName{
+    color: #fff;
+    margin-right:10px;
+    line-height: 36px;
+    height: 36px;
+    font-size: 18px;
+    justify-content: left;
+    padding: 0 24px;
+    min-width: max-content;
+    display: inline-block;
+}
+@keyframes showPlaceHolderItem{
+    0%{margin-top: 0;}
+    25%{margin-top: -36px;}
+    50%{margin-top: -72px;}
+    75%{ margin-top: -108px;}
+    100%{margin-top: 36px;}
+}
+
+@keyframes showPlaceHolderItem1{
+    0%{margin-top: 0;opacity: 1;}
+    25%{margin-top: -36px; opacity: .5;}
+    50%{margin-top: -72px; opacity: 0;}
+    75%{ margin-top: -108px; opacity: 0;}
+    100%{margin-top: 36px;opacity: 0;}
+}
+@keyframes showPlaceHolderItem2{
+    0%{margin-top: 0;opacity: 0;}
+    25%{margin-top: -36px; opacity: 1;}
+    50%{margin-top: -72px; opacity: 0;}
+    75%{ margin-top: -108px; opacity: 0;}
+    100%{margin-top: 36px;opacity: 0;}
+}
+@keyframes showPlaceHolderItem3{
+    0%{margin-top: 0;opacity: 0;}
+    25%{margin-top: -36px; opacity: 0;}
+    50%{margin-top: -72px; opacity: 1;}
+    75%{ margin-top: -108px; opacity: 0;}
+    100%{margin-top: 36px;opacity: 0;}
+}
